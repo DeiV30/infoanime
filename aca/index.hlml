@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 9 Mejores Animes según IMDb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            overflow: hidden; 
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); 
+            z-index: -1;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .anime-item {
+            background-color: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .anime-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+        .anime-title {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .anime-score {
+            font-size: 0.9em;
+            color: #ffd700; 
+        }
+        .anime-image {
+            max-width: 80px; 
+            margin-bottom: 10px;
+            cursor: pointer; 
+        }
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            background-size: cover;
+            transition: 1s opacity;
+            opacity: 0.5;
+        }
+        #video-background video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .title-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .title-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(255, 255, 255); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="overlay"></div>
+        
+        
+        <div class="title-container">
+            <div class="title-text">Mejores animes según IMDb</div>
+        </div>
+
+        
+        <div id="video-background">
+            <video autoplay muted loop>
+                <source src="¡Top 20 MEJORES momentos del Anime DEL SIGLO (Hasta ahora)!.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+        </div>
+
+        <
+        <div class="grid-container">
+            <div class="anime-item" onclick="redirectTo('https://www.crunchyroll.com/es-es/series/GR751KNZY/attack-on-titan')">
+                <img src="Imagenes\Attack on Titan.jpg" alt="Imagen Anime 1" class="anime-image">
+                <div class="anime-title"><strong>Ataque a los titanes</strong></div>
+                <div class="anime-score">Puntuación IMDb: 9.1</div>
+            </div>
+            <div class="anime-item" onclick="redirectTo('https://www.crunchyroll.com/es-es/series/GRGGPG93R/fullmetal-alchemist-brotherhood')">
+                <img src="Imagenes\Fullmetal Alchemist Brotherhood.jpg" alt="Imagen Anime 2" class="anime-image">
+                <div class="anime-title"><strong>Fullmetal Alchemist: Brotherhood</strong></div>
+                <div class="anime-score">Puntuación IMDb: 9.1</div>
+            </div>
+            <div class="anime-item" onclick="redirectTo('https://www.crunchyroll.com/es-es/series/GRMG8ZQZR/one-piece')">
+                <img src="Imagenes\onepice.jpg" alt="Imagen Anime 3" class="anime-image">
+                <div class="anime-title"><strong>One Piece</strong></div>
+                <div class="anime-score">Puntuación IMDb: 9.0</div>
+            </div>
+            <div class="anime-item" onclick="redirectTo('https://www.crunchyroll.com/es-es/series/GY3VKX1MR/hunter-x-hunter')">
+                <img src="Imagenes\Hunter x Hunter.jpg" alt="Imagen Anime 3" class="anime-image">
+                <div class="anime-title"><strong>Hunter x Hunter</strong></div>
+                <div class="anime-score">Puntuación IMDb: 9.0</div>
+            </div>
+            <div class="anime-item" onclick="redirectTo('https://www.netflix.com/title/70204970')">
+                <img src="Imagenes\Death Note.jpg" alt="Imagen Anime 3" class="anime-image">
+                <div class="anime-title"><strong>Death Note</strong></div>
+                <div class="anime-score">Puntuación IMDb: 8.9</div>
+            </div>
+            <div class="anime-item" onclick="redirectTo('https://www.crunchyroll.com/es-es/series/GYW4D15K6/steinsgate-0')">
+                <img src="Imagenes/Steins;Gate.jpg" alt="Imagen Anime 3" class="anime-image">
+                <div class="anime-title"><strong>Steins;Gate</strong></div>
+                <div class="anime-score">Puntuación IMDb: 8.9</div>
+            </div>
+            <div class="anime-item" onclick="redirectTo('https://www.crunchyroll.com/es-es/series/GYVNXMVP6/cowboy-bebop')">
+                <img src="Imagenes\Cowboy Bebop.jpg" alt="Imagen Anime 3" class="anime-image">
+                <div class="anime-title"><strong>Cowboy Bebop</strong></div>
+                <div class="anime-score">Puntuación IMDb: 8.9</div>
+            </div>
+            <div class="anime-item" onclick="redirectTo('https://www.netflix.com/title/80995578?dpRightClick=1&trackId=255824129&trackIdJaw=255824129&trackIdEpisode=255824129&trackIdTrailer=255824129')">
+                <img src="Imagenes\Hajime_no_Ippo.jpg" alt="Imagen Anime 3" class="anime-image">
+                <div class="anime-title"><strong>Espíritu de lucha</strong></div>
+                <div class="anime-score">Puntuación IMDb: 8.8</div>
+            </div>
+            <div class="anime-item" onclick="redirectTo('https://www.netflix.com/title/81033445?dpRightClick=1&trackId=255824129&trackIdJaw=255824129&trackIdEpisode=255824129&trackIdTrailer=255824129')">
+                <img src="Imagenes\Neon genesis.jpg" alt="Imagen Anime 3" class="anime-image">
+                <div class="anime-title"><strong>Neon Genesis Evangelion</strong></div>
+                <div class="anime-score">Puntuación IMDb: 8.5</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url; 
+        }
+    </script>
+</body>
+</html>
